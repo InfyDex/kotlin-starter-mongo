@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /unburden
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  swagger-ui.enabled: true
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  mongodb:
+    embedded:
+      version: 4.0.21
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: business-unburden
+      auto-index-creation: true
+
+jwt.secret: secret
